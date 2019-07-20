@@ -191,3 +191,36 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+.about-page .about-section {
+  margin: 20px;
+}
+
+.about-page .about-list {
+  border-top: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-page .about-list .list {
+  border-bottom: 1px dashed black;
+  padding: 10px;
+  width: 47.75%;
+  margin: 10px 0;
+}
+
+.about-page .about-list .list img {
+  margin-bottom: 10px;
+}
+.about-page .about-list .list button {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 30px;
+  border: 2px solid black;
+}
+
+.about-page .about-closing {
+  margin: 40px 10px;
+}
+
