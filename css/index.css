@@ -71,6 +71,26 @@ p {
     margin: 0 auto;
 }
 
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 30px 0;
+  margin-right: 40px;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: red;
+}
+
+.jumbo-img {
+  margin: 30px 0;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +130,49 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation:colors 3s infinite;
+    animation-duration: 3s;
+}
+
+@keyframes colors{
+  0%{     color: white; background-color: auto;        }
+  49%{    color: transparent; background-color: transparent; }
+  50%{    color: transparent; background-color: transparent; }
+  99%{    color: transparent; background-color:transparent;  }
+  100%{   color: white; background-color: auto;    }
+
+}
+
+.middle-content .boxes .one {
+  background-color: teal;
+}
+.middle-content .boxes .two {
+  background-color: gold;
+}
+.middle-content .boxes .three {
+  background-color: cadetblue;
+}
+.middle-content .boxes .four {
+  background-color: coral;
+}
+.middle-content .boxes .five {
+  background-color: crimson;
+}
+.middle-content .boxes .six {
+  background-color: forestgreen;
+}
+.middle-content .boxes .seven {
+  background-color: darkorchid;
+}
+.middle-content .boxes .eight {
+  background-color: hotpink;
+}
+.middle-content .boxes .nine {
+  background-color: indigo;
+}
+
+.middle-content .boxes .ten {
+  background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +206,78 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:active {
+  color: red;
+}
+.about-page .about-section {
+  margin: 20px;
+}
+
+.about-page .about-list {
+  border-top: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-page .about-list .list {
+  border-bottom: 1px dashed black;
+  padding: 10px;
+  width: 47.75%;
+  margin: 10px 0;
+}
+
+.about-page .about-list .list img {
+  margin-bottom: 10px;
+}
+.about-page .about-list .list button {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 30px;
+  border: 2px solid black;
+}
+
+.about-page .about-list .list button:hover {
+  background-color: black;
+  color: red;
+}
+
+.about-page .about-closing {
+  margin: 40px 10px;
+}
+
+.contact-page {
+  text-align: center;
+}
+
+.contact-page .contact-img {
+  width: 800px;
+  height: 153px;
+  margin: 20px 0;
+}
+
+.contact-page .contact-form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: middle;
+  align-items: middle;
+  margin: 30px 0;
+}
+
+.contact-page .contact-form .form-control{
+  width: 50%;
+  margin: 10px 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  color: red;
+
+}
+
+.contact-form form .submit {
+  border-radius: 15px;
+  background-color: black;
+  padding: 15px 30px;
 }
